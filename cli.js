@@ -1,13 +1,12 @@
-#!/usr/bin/env node --harmony
-console.log("it")
+#!/usr/bin/env node
+
+var path = require('path')
 var commander = require('commander');
-console.log(commander, "works")
 var updateNotifier = require('update-notifier')
 var debug = require('debug')('glimt');
 var chalk = require('chalk');
 var hasConfig = require('./lib/glimt-config');
-var pkgConf = require('pkg-conf')
-var conf = pkgConf.sync('glimt');
+
 
 commander.version('0.0.1');
 
