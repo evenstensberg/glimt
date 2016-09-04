@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+
+'use strict'
+
 var updateNotifier = require('update-notifier')
 var debug = require('debug')('glimt');
 var chalk = require('chalk');
