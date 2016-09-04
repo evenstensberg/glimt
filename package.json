@@ -1,6 +1,6 @@
 {
   "name": "glimt",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Comment transpiler written in Node",
   "repository": "https://github.com/ev1stensberg/glimt",
   "main": "cli.js",
