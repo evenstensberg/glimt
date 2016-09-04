@@ -11,7 +11,7 @@
 - [Installation](#installation)
 * [Setting up Glimt](#setup)
 * [CLI Commands](#commands)
-* [Examples](www.google.com)
+* [Examples]()
 * [Lisence](https://github.com/ev1stensberg/glimt/blob/master/LICENSE.md)
 * [Contribution](#contribution)
 
@@ -75,11 +75,11 @@ If you want to clear the line where your comment from .glimtrc is, run:
 
 If you want to compile an entire directory of files, run:
 
-`glimt -d myFolder`
+`glimt -d myFolder GlimtIsAwesome`
 
 If you want to compile a given file in a directory, run:
 
-`glimt -o myFolder/myfile.js`
+`glimt -o myFolder/myfile.js GlimtIsAwesome`
 
 ##Contribution
 
