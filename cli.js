@@ -1,13 +1,10 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 
-'use strict'
-
-var updateNotifier = require('update-notifier')
-var debug = require('debug')('glimt');
-var chalk = require('chalk');
-var commander = require('commander');
-var hasConfig = require('./lib/glimt-config');
-
+const commander = require('commander');
+const updateNotifier = require('update-notifier')
+const debug = require('debug')('glimt');
+const chalk = require('chalk');
+const hasConfig = require('./lib/glimt-config');
 
 commander.version('0.0.1');
 
