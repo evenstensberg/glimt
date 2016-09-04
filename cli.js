@@ -4,8 +4,10 @@ const updateNotifier = require('update-notifier')
 const debug = require('debug')('glimt');
 const chalk = require('chalk');
 const hasConfig = require('./lib/glimt-config');
+const pkgConf = require('pkg-conf')
+const conf = pkgConf.sync('glimt');
 
-commander.version(require('./package.json').version);
+commander.version('0.0.1');
 
 commander.usage('[options] <source>');
 commander.option('-n  --clear-dir', 'clear each file in a directory');
@@ -25,7 +27,7 @@ if (!hasConfig()) {
   process.exit(0);
 }
 
-updateNotifier({pkg: require('./package.json')}).notify();
+//updateNotifier({pkg: pkg}).notify();
 
 if (commander.clearLine) {
   const file = process.argv.slice(2)[1];
