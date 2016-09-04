@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-
-var path = require('path')
-var commander = require('commander');
 var updateNotifier = require('update-notifier')
 var debug = require('debug')('glimt');
 var chalk = require('chalk');
+var commander = require('commander');
 var hasConfig = require('./lib/glimt-config');
 
 
