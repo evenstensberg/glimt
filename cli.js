@@ -1,11 +1,11 @@
 #!/usr/bin/env node --harmony
-const commander = require('commander');
-const updateNotifier = require('update-notifier')
-const debug = require('debug')('glimt');
-const chalk = require('chalk');
-const hasConfig = require('./lib/glimt-config');
-const pkgConf = require('pkg-conf')
-const conf = pkgConf.sync('glimt');
+var commander = require('commander');
+var updateNotifier = require('update-notifier')
+var debug = require('debug')('glimt');
+var chalk = require('chalk');
+var hasConfig = require('./lib/glimt-config');
+var pkgConf = require('pkg-conf')
+var conf = pkgConf.sync('glimt');
 
 commander.version('0.0.1');
 
