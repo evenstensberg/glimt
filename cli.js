@@ -1,5 +1,7 @@
 #!/usr/bin/env node --harmony
+console.log("it")
 var commander = require('commander');
+console.log(commander, "works")
 var updateNotifier = require('update-notifier')
 var debug = require('debug')('glimt');
 var chalk = require('chalk');
