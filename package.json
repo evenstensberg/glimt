@@ -5,7 +5,8 @@
   "repository": "https://github.com/ev1stensberg/glimt",
   "main": "cli.js",
   "scripts": {
-    "lint": "xo"
+    "lint": "xo",
+    "test": "ava --verbose"
   },
   "bin": {
     "glimt": "cli.js"
@@ -25,5 +26,8 @@
     "debug": "^2.2.0",
     "time-require": "^0.1.2",
     "update-notifier": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0"
   }
 }
