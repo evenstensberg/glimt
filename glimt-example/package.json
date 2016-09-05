@@ -1,0 +1,16 @@
+{
+  "name": "glimt-example",
+  "version": "1.0.0",
+  "description": "An example of Glimt usage",
+  "main": "index.js",
+  "scripts": {
+    "usage": "sudo glimt --help",
+    "clear:dir": "sudo glimt -n ex",
+    "clear:file": "sudo glimt -f ex/output.js",
+    "clear:line": "sudo glimt -l ex/output.js",
+    "compile:file": "sudo glimt -o ex/output.js TODO:",
+    "compile:dir": "sudo glimt -d ex TODO:"
+  },
+  "author": "Even Stensberg",
+  "license": "MIT"
+}
