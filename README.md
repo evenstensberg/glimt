@@ -56,6 +56,8 @@ ReactDOM.render(<HelloMessage name="Mădălina"/>, mountNode);
 
 ##Commands
 
+######You might need to prefix your commands with `sudo`
+
 ###Clearing Modules
 
 If you want to clear every file in a folder, run:
