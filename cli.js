@@ -1,7 +1,6 @@
 #!/usr/bin/env node --harmony
 
 const commander = require('commander');
-const updateNotifier = require('update-notifier')
 const debug = require('debug')('glimt');
 const chalk = require('chalk');
 const hasConfig = require('./lib/glimt-config');
@@ -26,13 +25,6 @@ if (!hasConfig()) {
   console.log(chalk.red.italic('Set up a .comradrc file to avoid this message'));
   process.exit(0);
 }
-
-const notifier = updateNotifier({
-    pkg: pkg,
-    updateCheckInterval: 1000 * 60 * 60 * 24
-});
-
-console.log(`Update available: ${notifier.update.latest}`);
 
 if (commander.clearLine) {
   const file = process.argv.slice(2)[1];
